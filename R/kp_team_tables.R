@@ -66,9 +66,10 @@ kp_team_schedule <- function(team, year = 2022){
 
 
       ### Pull Data
-      url <- paste0("https://kenpom.com/team.php?",
+      if (year = 2024){url <- paste0("https://kenpom.com/team.php?",
+                    "team=",team_name)}else {url <- paste0("https://kenpom.com/team.php?",
                     "team=",team_name,
-                    "&y=", year)
+                    "&y=", year)}
 
       page <- rvest::session_jump_to(browser, url)
       Sys.sleep(5)
