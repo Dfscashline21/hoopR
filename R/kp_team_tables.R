@@ -66,7 +66,7 @@ kp_team_schedule <- function(team, year = 2022){
 
 
       ### Pull Data
-      if (year = 2024){url <- paste0("https://kenpom.com/team.php?",
+      if (year == 2024){url <- paste0("https://kenpom.com/team.php?",
                     "team=",team_name)}else {url <- paste0("https://kenpom.com/team.php?",
                     "team=",team_name,
                     "&y=", year)}
@@ -531,7 +531,7 @@ kp_gameplan <- function(team, year=2021){
 
 
       ### Pull Data
-      if (year = 2024){url <- paste0("https://kenpom.com/team.php?",
+      if (year == 2024){url <- paste0("https://kenpom.com/team.php?",
                     "team=",team_name)}else {url <- paste0("https://kenpom.com/team.php?",
                     "team=",team_name,
                     "&y=", year)}
@@ -2296,7 +2296,7 @@ kp_team_lineups <- function(team, year=2021){
 
 
       ### Pull Data
-      if (year = 2024){url <- paste0("https://kenpom.com/team.php?",
+      if (year == 2024){url <- paste0("https://kenpom.com/team.php?",
                   "team=",team_name)}else {url <- paste0("https://kenpom.com/team.php?",
                   "team=",team_name,
                   "&y=", year)}
