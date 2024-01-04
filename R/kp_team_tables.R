@@ -2080,9 +2080,10 @@ kp_team_depth_chart <- function(team, year= 2021){
 
 
       ### Pull Data
-      url <- paste0("https://kenpom.com/team.php?",
-                    "team=",team_name,
-                    "&y=", year)
+      if (year == 2024){url <- paste0("https://kenpom.com/team.php?",
+                  "team=",team_name)}else {url <- paste0("https://kenpom.com/team.php?",
+                  "team=",team_name,
+                  "&y=", year)}
 
       page <- rvest::session_jump_to(browser, url)
       Sys.sleep(5)
