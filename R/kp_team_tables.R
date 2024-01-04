@@ -2300,7 +2300,7 @@ kp_team_lineups <- function(team, year=2021){
                   "team=",team_name)}else {url <- paste0("https://kenpom.com/team.php?",
                   "team=",team_name,
                   "&y=", year)}
-
+      print(url)
       page <- rvest::session_jump_to(browser, url)
       Sys.sleep(5)
       depth2_header_cols <- c("Rk","PG", "SG", "SF",
