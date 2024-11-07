@@ -47,7 +47,7 @@
 #'   try(kp_team_schedule(team = 'Florida St.', year = 2022))
 #' }
 
-kp_team_schedule <- function(team, year = 2022){
+kp_team_schedule <- function(team, year = 2025){
 
   tryCatch(
     expr = {
@@ -66,7 +66,7 @@ kp_team_schedule <- function(team, year = 2022){
 
 
       ### Pull Data
-      if (year %in% c(2024,2025,2026,2027)) {url <- paste0("https://kenpom.com/team.php?",
+      if (year %in% c(2024,2026,2027)) {url <- paste0("https://kenpom.com/team.php?",
                     "team=",team_name)}else {url <- paste0("https://kenpom.com/team.php?",
                     "team=",team_name,
                     "&y=", year)}
@@ -531,7 +531,7 @@ kp_gameplan <- function(team, year=2021){
 
 
       ### Pull Data
-      if (year %in% c(2024,2025,2026,2027)) {url <- paste0("https://kenpom.com/team.php?",
+      if (year %in% c(2024,2026,2027)) {url <- paste0("https://kenpom.com/team.php?",
                     "team=",team_name)}else {url <- paste0("https://kenpom.com/team.php?",
                     "team=",team_name,
                     "&y=", year)}
@@ -2080,7 +2080,7 @@ kp_team_depth_chart <- function(team, year= 2021){
 
 
       ### Pull Data
-      if (year %in% c(2024,2025,2026,2027)) {url <- paste0("https://kenpom.com/team.php?",
+      if (year %in% c(2024,2026,2027)) {url <- paste0("https://kenpom.com/team.php?",
                   "team=",team_name)}else {url <- paste0("https://kenpom.com/team.php?",
                   "team=",team_name,
                   "&y=", year)}
@@ -2297,7 +2297,7 @@ kp_team_lineups <- function(team, year=2021){
 
 
       ### Pull Data
-      if (year %in% c(2024,2025,2026,2027)) {url <- paste0("https://kenpom.com/team.php?",
+      if (year %in% c(2024,2026,2027)) {url <- paste0("https://kenpom.com/team.php?",
                   "team=",team_name)}else {url <- paste0("https://kenpom.com/team.php?",
                   "team=",team_name,
                   "&y=", year)}
