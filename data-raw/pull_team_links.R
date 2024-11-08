@@ -10,7 +10,7 @@ suppressPackageStartupMessages(suppressMessages(library(data.table)))
 suppressPackageStartupMessages(suppressMessages(library(arrow)))
 suppressPackageStartupMessages(suppressMessages(library(glue)))
 suppressPackageStartupMessages(suppressMessages(library(optparse)))
-years <- hoopR::most_recent_mbb_season():2002
+years <- hoopR::most_recent_mbb_season():2025
 
 browser <- hoopR::login()
 
