@@ -512,7 +512,7 @@ kp_team_schedule <- function(team, year = 2025){
 #'    try(kp_gameplan(team='Florida St.', year=2021))
 #' }
 
-kp_gameplan <- function(team, year=2021){
+kp_gameplan <- function(team, year=2025){
 
   tryCatch(
     expr = {
@@ -782,7 +782,7 @@ kp_gameplan <- function(team, year=2021){
 #'   try(kp_opptracker(team = 'Florida St.', year = 2021))
 #' }
 
-kp_opptracker <- function(team, year = 2021){
+kp_opptracker <- function(team, year = 2025){
 
   tryCatch(
     expr = {
@@ -1016,7 +1016,7 @@ kp_opptracker <- function(team, year = 2021){
 #'   }
 #'
 
-kp_team_players <- function(team, year = 2021){
+kp_team_players <- function(team, year = 2025){
 
   tryCatch(
     expr = {
@@ -1583,7 +1583,7 @@ kp_player_career <- function(player_id){
 #'   }
 #'
 #'
-kp_minutes_matrix <- function(team, year = 2021){
+kp_minutes_matrix <- function(team, year = 2025){
 
   tryCatch(
     expr = {
@@ -1790,7 +1790,7 @@ kp_minutes_matrix <- function(team, year = 2021){
 #'   \donttest{
 #'     try(kp_team_player_stats(team = 'Florida St.', year = 2021))
 #'   }
-kp_team_player_stats <- function(team, year = 2021){
+kp_team_player_stats <- function(team, year = 2025){
 
   tryCatch(
     expr = {
@@ -2060,7 +2060,7 @@ kp_team_player_stats <- function(team, year = 2021){
 #'
 #'
 
-kp_team_depth_chart <- function(team, year= 2021){
+kp_team_depth_chart <- function(team, year= 2025){
 
   tryCatch(
     expr = {
@@ -2277,7 +2277,7 @@ kp_team_depth_chart <- function(team, year= 2021){
 #'   }
 #'
 
-kp_team_lineups <- function(team, year=2021){
+kp_team_lineups <- function(team, year=2025){
 
   tryCatch(
     expr = {
