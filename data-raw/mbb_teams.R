@@ -2,7 +2,7 @@ library(hoopR)
 library(dplyr)
 
 
-x <- ncaa_mbb_teams(year = 2023, division = 1)
+x <- ncaa_mbb_teams(year = 2025, division = 1)
 
 x <- x %>%
   dplyr::arrange(.data$team_name)

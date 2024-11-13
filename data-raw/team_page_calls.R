@@ -8,7 +8,7 @@ library(stringr)
 library(xml2)
 source("data-raw/pull_team_page.R")
 teams = hoopR::teams_links$Team
-year=2021
+year=2025
 
 # browser <- hoopR::login(Sys.getenv("kp_user"),Sys.getenv("kp_pw"))
 # gather_team_pages(browser, year = 2010)
