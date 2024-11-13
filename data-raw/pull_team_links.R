@@ -92,7 +92,7 @@ dict_hoopR_joined <- dict_hoopR %>%
 
 # teams_links <- all_teams
 # usethis::use_data(teams_links, overwrite = TRUE)
-#
+
 # teamlist <- data.frame(hoopR::teams_links)
-#
+
 # teamlist
